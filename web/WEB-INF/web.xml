@@ -10,11 +10,45 @@
     <servlet>
         <servlet-name>myServlet</servlet-name>
         <servlet-class>myApp.aServlet</servlet-class>
+        <init-param>
+            <param-name>p1</param-name>
+            <param-value>v1</param-value>
+        </init-param>
+        <init-param>
+            <param-name>p2</param-name>
+            <param-value>v2</param-value>
+        </init-param>
     </servlet>
+    <servlet>
+        <servlet-name>myServlet_B</servlet-name>
+        <servlet-class>myApp.bServlet</servlet-class>
+        <init-param>
+            <param-name>p1</param-name>
+            <param-value>vb1</param-value>
+        </init-param>
+        <init-param>
+            <param-name>p2</param-name>
+            <param-value>vb2</param-value>
+        </init-param>
+    </servlet>
+    
+    <servlet>
+        <servlet-name>myServlet_C</servlet-name>
+        <servlet-class>myApp.cServlet</servlet-class>
+    </servlet>
+
 
     <servlet-mapping>
         <servlet-name>myServlet</servlet-name>
         <url-pattern>/aServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>myServlet_B</servlet-name>
+        <url-pattern>/bServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>myServlet_C</servlet-name>
+        <url-pattern>/cServlet</url-pattern>
     </servlet-mapping>
 
 </web-app>
